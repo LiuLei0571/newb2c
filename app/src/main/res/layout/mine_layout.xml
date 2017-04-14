@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ityoucai="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ll_mine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background">
+
+    <include
+        android:id="@+id/mine_top_layout"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mine_top_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_head"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_info_height"
+                android:background="@android:color/white">
+
+                <com.example.b2c.widget.CircleImg
+                    android:id="@+id/ci_avatarImg"
+                    android:layout_width="@dimen/mine_head_height"
+                    android:layout_height="@dimen/mine_head_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:layout_marginTop="60dp"
+                    android:contentDescription="@string/app_name"/>
+
+                <TextView
+                    android:id="@+id/tv_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_toRightOf="@+id/ci_avatarImg"
+                    android:textColor="@color/mine_text_color"/>
+
+                <ImageView
+                    android:id="@+id/iv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:src="@drawable/arrow_right"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_head"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.example.b2c.widget.SettingItemView
+                    android:id="@+id/siv_mine_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    ityoucai:lefticon="@drawable/ic_uls_order"/>
+
+                <com.example.b2c.widget.SettingItemView
+                    android:id="@+id/siv_mine_collection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    ityoucai:lefticon="@drawable/mine_collection"/>
+
+                <com.example.b2c.widget.SettingItemView
+                    android:id="@+id/siv_mine_security"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    ityoucai:lefticon="@drawable/ic_uls_safe"/>
+
+                <com.example.b2c.widget.SettingItemView
+                    android:id="@+id/siv_mine_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    ityoucai:lefticon="@drawable/mine_msg"/>
+
+                <com.example.b2c.widget.SettingItemView
+                    android:id="@+id/siv_mine_good"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    ityoucai:lefticon="@drawable/ic_uls_location"/>
+
+                <com.example.b2c.widget.SettingItemView
+                    android:id="@+id/siv_mine_cas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    ityoucai:lefticon="@drawable/ic_uls_cash"/>
+
+                <com.example.b2c.widget.SettingItemView
+                    android:id="@+id/siv_mine_coupons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    ityoucai:lefticon="@drawable/ic_uls_coupon"/>
+
+                <Button
+                    android:id="@+id/btn_logout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_xxsmall"
+                    android:layout_marginLeft="@dimen/dimen_border_size_xlarge"
+                    android:layout_marginRight="@dimen/dimen_border_size_xlarge"
+                    android:layout_marginTop="@dimen/padding_normal"
+                    android:background="@drawable/button_shape"
+                    android:padding="@dimen/padding_normal"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_large"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

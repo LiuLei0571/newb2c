@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <EditText
+        android:id="@+id/etAdvice"
+        style="@style/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:gravity="start"
+        android:hint="请输入商品描述"
+        android:padding="@dimen/margin_normal"/>
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="2dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="2dp"/>
+</LinearLayout>

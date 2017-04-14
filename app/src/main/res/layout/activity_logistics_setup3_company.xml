@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setup1_company"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_border_size_xlarge"
+            android:layout_marginRight="@dimen/dimen_border_size_xlarge"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_title_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:padding="5dp"
+                        android:scaleType="center"
+                        android:src="@drawable/company_set_three"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_company_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="公司信息"
+                            android:textColorHint="#d1d1d1d1"
+                            android:textSize="@dimen/text_mini"/>
+
+                        <TextView
+                            android:id="@+id/tv_linkman_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="联系人信息"
+                            android:textColorHint="#d1d1d1d1"
+                            android:textSize="@dimen/text_mini"/>
+
+                        <TextView
+                            android:id="@+id/tv_company_account"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="结算账号"
+                            android:textColorHint="#d1d1d1d1"
+                            android:textSize="@dimen/text_mini"/>
+
+                        <TextView
+                            android:id="@+id/tv_company_end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="审核通过"
+                            android:textColorHint="#d1d1d1d1"
+                            android:textSize="@dimen/text_mini"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_title_personal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:padding="5dp"
+                        android:scaleType="center"
+                        android:src="@drawable/company_set_personal_three"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_personal_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="个人信息"
+                            android:textColorHint="#d1d1d1d1"
+                            android:textSize="@dimen/text_mini"/>
+
+                        <TextView
+                            android:id="@+id/tv_settle_account"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="结算账号"
+                            android:textColorHint="#d1d1d1d1"
+                            android:textSize="@dimen/text_mini"/>
+
+                        <TextView
+                            android:id="@+id/tv_personal_end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="审核通过"
+                            android:textColorHint="#d1d1d1d1"
+                            android:textSize="@dimen/text_mini"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <com.example.b2c.widget.EditTextWithDelete
+                android:id="@+id/et_margin"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_edit_gray"
+                android:drawableRight="@drawable/ic_delete"
+                android:hint="保证金额度"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="#d1d1d1d1"/>
+
+            <TextView
+                android:id="@+id/tv_margin_money"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:gravity="right"
+                android:text="最低保证金额度ks 5000"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_edit_gray"
+                android:padding="5dp">
+
+                <com.example.b2c.widget.EditTextWithDelete
+                    android:id="@+id/et_bankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/ic_delete"
+                    android:hint="开户行名称"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColorHint="#d1d1d1d1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_edit_gray"
+                android:padding="5dp">
+
+                <com.example.b2c.widget.EditTextWithDelete
+                    android:id="@+id/et_bankBranchName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/ic_delete"
+                    android:hint="支行名称"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColorHint="#d1d1d1d1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_edit_gray"
+                android:padding="5dp">
+
+                <com.example.b2c.widget.EditTextWithDelete
+                    android:id="@+id/et_bankAccountName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/ic_delete"
+                    android:hint="银行开户名"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColorHint="#d1d1d1d1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_edit_gray"
+                android:padding="5dp">
+
+                <com.example.b2c.widget.EditTextWithDelete
+                    android:id="@+id/et_bankAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_username"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/ic_delete"
+                    android:hint="银行账号"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColorHint="#d1d1d1d1"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_login_shape"
+                android:padding="10dp"
+                android:text="下一步"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_large"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+
+

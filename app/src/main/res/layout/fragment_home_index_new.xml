@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tv_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/pop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tv_home_setting"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/title_bar"
+            layout="@layout/activity_home_header_top" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_home_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pop"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/pop"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:textSize="12sp" />
+</RelativeLayout>

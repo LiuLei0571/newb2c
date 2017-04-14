@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_depot_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="deliver from "
+        android:textColor="#5EABCF"
+        android:textSize="@dimen/text_normal"
+        android:background="@color/background"/>
+    <ListView
+        android:id="@+id/lv_check_order_sample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_light"/>
+    <com.example.b2c.widget.SettingItemView2
+        android:id="@+id/siv_deliver_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.example.b2c.widget.SettingItemView2>
+</LinearLayout>

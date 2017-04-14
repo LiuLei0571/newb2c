@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:gravity="center_vertical">
+  <LinearLayout
+      android:id="@+id/op"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      >
+      <TextView
+          android:id="@+id/tv_type"
+          style="@style/w_h_20dp"
+          android:layout_weight="1"
+          android:layout_marginBottom="5dp"
+          />
+      <TextView
+          android:id="@+id/tv_money"
+         style="@style/w_h_20dp"
+
+          />
+  </LinearLayout>
+        <TextView
+            android:id="@+id/tv_zhongjian"
+            style="@style/w_h_20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:layout_below="@+id/op"
+            />
+
+        <TextView
+            android:id="@+id/tv_baozhengjin_xiamian"
+            style="@style/w_h_20dp"
+            android:textSize="14sp"
+            android:layout_below="@+id/tv_zhongjian"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/tv_baozhengjin_zui_xiamian"
+            style="@style/w_h_20dp"
+            android:textSize="14sp"
+            android:layout_below="@+id/tv_baozhengjin_xiamian"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/tv_biandong_time"
+            style="@style/w_h_20dp"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/op"
+
+            />
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_seller" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/seller_bar"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_cash_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_micro"
+            android:textColor="@color/white"
+            android:text="待结算金额(Ks)" />
+        <TextView
+            android:id="@+id/tv_cash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/text_huger"
+            android:textColor="@color/white"
+           />
+    </LinearLayout>
+    <com.example.b2c.widget.SettingItemView3
+        android:id="@+id/siv_settle_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+    <com.example.b2c.widget.SettingItemView3
+        android:id="@+id/siv_settle_delay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.example.b2c.widget.SettingItemView3
+        android:id="@+id/siv_settle_yet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

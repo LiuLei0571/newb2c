@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/title"
+        layout="@layout/toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/hand"
+        android:padding="15dp"
+        >
+        <Button
+            android:id="@+id/btn_go_jiesuan"
+            android:layout_width="@dimen/x130"
+            android:layout_height="@dimen/x65"
+            android:background="@drawable/bg_touming"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/tv_no_kjiesuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            />
+        <TextView
+            android:id="@+id/tv_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16sp"
+            android:layout_above="@+id/tv_baozhengjin"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_guanliandingdan"
+        style="@style/mine_tiaomu"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_guanliandingdan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <ImageView
+            style="@style/right_jiantou" />
+    </LinearLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:id="@+id/view3"></View>
+</LinearLayout>

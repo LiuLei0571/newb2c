@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <ImageView
+        android:layout_width="@dimen/head_image"
+        android:layout_height="@dimen/head_image"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_border_size_mlarge"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:gravity="center"
+        android:textColor="@color/gray"/>
+    <Button
+        android:id="@+id/bnt_my_maijia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize ="@dimen/text_normal"
+        android:layout_marginLeft ="@dimen/padding_lnormal"
+        android:layout_marginRight ="@dimen/padding_lnormal"
+        android:maxLines = "1"
+        android:paddingLeft ="10dp"
+        android:textColor="@drawable/selector_text_redtowhite"
+        android:background = "@drawable/selector_btn_bg_ringtofull" />
+    <Button
+        android:id="@+id/bnt_seller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize ="@dimen/text_normal"
+        android:layout_marginLeft ="@dimen/padding_lnormal"
+        android:layout_marginRight ="@dimen/padding_lnormal"
+        android:maxLines = "1"
+        android:paddingLeft ="10dp"
+        android:layout_marginTop="18dp"
+        android:textColor="@drawable/selector_text_redtowhite"
+        android:background = "@drawable/selector_btn_bg_ringtofull" />
+
+
+    <Button
+        android:id="@+id/btn_courier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center_vertical"
+        android:textSize ="@dimen/text_normal"
+        android:layout_marginLeft ="@dimen/padding_lnormal"
+        android:layout_marginRight ="@dimen/padding_lnormal"
+        android:maxLines = "1"
+        android:paddingLeft ="10dp"
+        android:textColor="@drawable/selector_text_redtowhite"
+        android:background = "@drawable/selector_btn_bg_ringtofull" />
+
+</LinearLayout>

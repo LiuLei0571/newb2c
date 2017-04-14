@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search_type">
+        <item>商品</item>
+        <item>店铺</item>
+    </string-array>
+    <string-array name="refund_reason">
+        <item>图片、产地、保质期等描述不符</item>
+        <item>认为是假货</item>
+        <item>商品破损问题</item>
+        <item>发货问题</item>
+        <item>商品变质</item>
+        <item>生产日期、批号与卖家承诺不符</item>
+        <item>效果不好/不喜欢</item>
+        <item>认为是三无产品</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="isreceving">
+        <item>未收到</item>
+        <item>已收到</item>
+    </string-array>
+</resources>

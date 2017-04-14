@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:id="@+id/ll_zong"
+
+    >
+    <RelativeLayout
+        android:id="@+id/ll_myfabu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+<ImageView
+    android:id="@+id/iv_lives_list"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_gravity="center_vertical"
+    android:scaleType="fitXY"/>
+<RelativeLayout
+    android:id="@+id/rl_right"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_toRightOf="@+id/iv_lives_list"
+    android:paddingLeft="15dp"
+    >
+<TextView
+    android:id="@+id/tv_list_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="杭州滨江有房子出租，好地方快来看啊快点啊啊啊啊啊啊"
+    />
+    <TextView
+        android:id="@+id/tv_lives_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="1个小时前"
+        />
+</RelativeLayout>
+        <TextView
+            android:id="@+id/deletess"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@+id/rl_right"
+            android:text="删除"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="@color/text_red"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_my_lives"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="15dp"
+            >
+            <TextView
+                android:id="@+id/my_lives_bianji"
+                android:layout_width="55dp"
+                android:layout_height="27dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_select"
+                android:text="编辑"
+                android:gravity="center"
+                android:layout_toLeftOf="@+id/my_lives_delete"
+                android:textSize="12sp"
+                />
+        <TextView
+            android:id="@+id/my_lives_delete"
+            android:layout_width="55dp"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_select"
+            android:text="删除"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="12sp"
+            />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

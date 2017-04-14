@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_addr_select"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.b2c.activity.AddrSelectActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+    <ListView
+        android:id="@+id/lv_my_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:cacheColorHint="@color/white"
+        android:divider="@color/divider_light"
+        android:dividerHeight="1dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="10dp" >
+    </ListView>
+</RelativeLayout>

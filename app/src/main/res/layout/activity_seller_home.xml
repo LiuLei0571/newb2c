@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/toolbar_seller" />
+
+
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/background_color">
+
+        <RadioGroup
+            android:id="@+id/main_tab_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbt_order"
+                style="@style/BottomTabStyle"
+                android:checked="false"
+                android:drawableTop="@drawable/bg_seller_order_select"
+                android:textSize="@dimen/text_micro" />
+
+            <RadioButton
+                android:id="@+id/rbt_mine"
+                style="@style/BottomTabStyle"
+                android:checked="true"
+                android:drawableTop="@drawable/bg_seller_mine_select"
+                android:textSize="@dimen/text_micro" />
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>

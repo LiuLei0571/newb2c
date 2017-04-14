@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+    <com.example.b2c.widget.EditTextWithDelete
+        android:id="@+id/et_check_old"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:hint="请输入旧密码"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/ic_delete"
+        android:padding="10dp"/>
+
+    <com.example.b2c.widget.EditTextWithDelete
+        android:id="@+id/et_input_new"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:hint="newPassword"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/ic_delete"
+        android:padding="10dp"/>
+    <com.example.b2c.widget.EditTextWithDelete
+        android:id="@+id/et_check_new"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:hint="rePassword"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/ic_delete"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_border_size_llarge"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape"
+        android:text="确认"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

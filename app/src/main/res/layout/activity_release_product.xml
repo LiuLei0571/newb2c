@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ityoucai="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlyt_pre"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/iv_title_select_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_phone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlyt_select"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_select_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/iv_again_select"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_phone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_normal">
+
+                <EditText
+                    android:id="@+id/from_advise"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:background="@color/white"
+                    android:gravity="start"
+                    android:maxLength="60"
+                    android:paddingLeft="@dimen/margin_normal"
+                    android:textSize="@dimen/text_normal" />
+
+
+                <TextView
+                    android:id="@+id/tv_limit"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:gravity="right|center_vertical"
+                    android:text="0/60" />
+
+                <include layout="@layout/item_line" />
+
+                <LinearLayout
+                    android:id="@+id/receive_address_lyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:background="@drawable/item_selector_white_bg"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/margin_normal">
+
+                    <TextView
+                        android:id="@+id/tv_title_category"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/text_petty" />
+
+                    <TextView
+                        android:id="@+id/tv_input_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/mine_arrow_right"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/text_small" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_light" />
+
+                <LinearLayout
+                    android:id="@+id/receive_specification_lyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:background="@drawable/item_selector_white_bg"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/margin_normal">
+
+                    <TextView
+                        android:id="@+id/tv_title_specification"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/text_petty" />
+
+                    <TextView
+                        android:id="@+id/tv_input_specification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/mine_arrow_right"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/text_small" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marring_xlarge"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_normal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/margin_normal">
+
+                    <TextView
+                        android:id="@+id/dynamic_title_address"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_dark" />
+
+                    <com.example.b2c.widget.EditTextWithDelete
+                        android:id="@+id/dynamic_input_address"
+                        style="@style/EditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/ic_delete"
+                        android:gravity="right|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_small" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/margin_normal">
+
+                    <TextView
+                        android:id="@+id/dynamic_title_code"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_dark" />
+
+                    <com.example.b2c.widget.EditTextWithDelete
+                        android:id="@+id/dynamic_input_code"
+                        style="@style/EditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/ic_delete"
+                        android:gravity="right|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_small" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/margin_normal">
+
+                    <TextView
+                        android:id="@+id/dynamic_title_brand"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_dark" />
+
+                    <com.example.b2c.widget.EditTextWithDelete
+                        android:id="@+id/dynamic_input_brand"
+                        style="@style/EditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/ic_delete"
+                        android:gravity="right|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_small" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marring_xlarge"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_normal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/margin_normal">
+
+                    <TextView
+                        android:id="@+id/dynamic_title_unit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_dark" />
+
+                    <com.example.b2c.widget.EditTextWithDelete
+                        android:id="@+id/dynamic_input_unit"
+                        style="@style/EditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/ic_delete"
+                        android:gravity="right|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_small" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_light" />
+                <LinearLayout
+                    android:id="@+id/lyt_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/margin_normal">
+
+                    <TextView
+                        android:id="@+id/dynamic_title_account"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_dark" />
+
+                    <com.example.b2c.widget.EditTextWithDelete
+                        android:id="@+id/dynamic_input_account"
+                        style="@style/EditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/ic_delete"
+                        android:gravity="right|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_small" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_light" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/margin_normal">
+
+                    <TextView
+                        android:id="@+id/dynamic_title_price"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/text_dark" />
+
+                    <com.example.b2c.widget.EditTextWithDelete
+                        android:id="@+id/dynamic_input_price"
+                        style="@style/EditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/ic_delete"
+                        android:gravity="right|center_vertical"
+                        android:hint="ks"
+                        android:inputType="number|numberDecimal"
+                        android:singleLine="true"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_small" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/margin_normal">
+
+                    <TextView
+                        android:id="@+id/dynamic_title_weight"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_dark" />
+
+                    <com.example.b2c.widget.EditTextWithDelete
+                        android:id="@+id/dynamic_input_weight"
+                        style="@style/EditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/ic_delete"
+                        android:gravity="right|center_vertical"
+                        android:hint="kg"
+                        android:inputType="number|numberDecimal"
+                        android:singleLine="true"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_small" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/item_local_driver" />
+
+            <LinearLayout
+                android:id="@+id/lyt_description"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/label_height"
+                android:background="@drawable/item_selector_white_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_normal"
+                android:paddingRight="@dimen/margin_normal">
+
+                <TextView
+                    android:id="@+id/tv_title_description"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_petty" />
+
+                <TextView
+                    android:id="@+id/tv_input_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/mine_arrow_right"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_small" />
+
+            </LinearLayout>
+
+            <include layout="@layout/item_local_driver" />
+
+            <include layout="@layout/item_local_driver" />
+
+            <LinearLayout
+                android:id="@+id/lyt_warehouse"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/label_height"
+                android:background="@drawable/item_selector_white_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_normal"
+                android:paddingRight="@dimen/margin_normal">
+
+                <TextView
+                    android:id="@+id/tv_title_warehouse"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_petty" />
+
+                <TextView
+                    android:id="@+id/tv_input_warehouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_small"
+                    android:singleLine="true"
+                    android:maxEms="8"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/mine_arrow_right"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_small" />
+
+            </LinearLayout>
+
+            <include layout="@layout/item_local_driver" />
+
+            <LinearLayout
+                android:id="@+id/lyt_distribution"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/label_height"
+                android:background="@drawable/item_selector_white_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_normal"
+                android:paddingRight="@dimen/margin_normal">
+
+                <TextView
+                    android:id="@+id/tv_title_distribution"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_petty" />
+
+                <TextView
+                    android:id="@+id/tv_input_distribution"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/mine_arrow_right"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_small" />
+
+            </LinearLayout>
+
+            <include layout="@layout/item_local_driver" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/marring_normal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_red_login"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

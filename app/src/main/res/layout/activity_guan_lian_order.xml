@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_guan_lian_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+<include layout="@layout/toolbar"></include>
+    <EditText
+        android:id="@+id/et_guanlian"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_guanlian"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="关联订单"
+        android:textSize="@dimen/font_18sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="@drawable/bg_corder_queding"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        />
+</LinearLayout>

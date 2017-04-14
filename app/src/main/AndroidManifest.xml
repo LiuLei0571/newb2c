@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.b2c">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".B2C"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".activity.LaunchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.UserSafeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoodsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyAddrActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditAddrActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoodsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".activity.ShopIntroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BindNumActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BindEmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChangePswActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BuyerLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CheckOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.ChangeCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ForgetPswActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoodsCommentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoodsDetailWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HomeIntentAdWebviewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 1.1 -->
+        <activity
+            android:name=".activity.courier.CourierLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.seller.SellerLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.logistic.LogisticsLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.UserForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.common.UserChangePasswordActivity" />
+        <activity android:name=".activity.common.UserRegisterPasswordActivity" />
+        <!-- 卖家主页面 -->
+        <activity
+            android:name=".activity.seller.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.seller.AssetsActivity" />
+        <activity android:name=".activity.seller.InfoActivity" />
+        <activity android:name=".activity.seller.SecurityActivity" />
+        <activity android:name=".activity.seller.CourierListActivity" />
+        <activity android:name=".activity.seller.WithdrawalActivity" />
+        <activity android:name=".activity.seller.WithdrawalDetailActivity" />
+        <activity android:name=".activity.seller.TradingActivity" />
+        <activity android:name=".activity.seller.CourierDetailActivity" />
+        <activity android:name=".activity.seller.TodayOrderActivity" />
+        <activity android:name=".activity.seller.RefuseGoodsListActivity" />
+        <activity android:name=".activity.seller.WaitingGoodsListActivity" />
+        <activity android:name=".activity.seller.NewOrderListActivity" />
+        <activity android:name=".activity.seller.SendGoodsListActivity" />
+        <activity android:name=".activity.seller.GoodsSelectCourierActivity" />
+        <activity android:name=".activity.seller.BindPhoneActivity" />
+        <activity android:name=".activity.seller.OrderDetailLogisticActivity" />
+        <activity android:name=".activity.seller.ChangeShopDetailActivity" />
+        <activity android:name=".activity.seller.UpdateShopActivity" />
+        <activity android:name=".activity.common.OtherUserLoginActivity" />
+        <activity android:name=".activity.logistic.ApplyMoneyActivity" />
+        <activity android:name=".activity.logistic.CreateUserActivity" />
+        <activity android:name=".activity.logistic.LogisticsHomeActivity" />
+        <activity android:name=".activity.logistic.ChildAccountListActivity" />
+        <activity android:name=".activity.logistic.AddAccountActivity" />
+        <activity android:name=".activity.common.WebViewActivity" />
+        <activity android:name=".activity.logistic.UpdateAccountActivity" />
+        <activity android:name=".activity.logistic.SearchHistoryActivity" />
+        <activity android:name=".activity.logistic.LogisticsOrderDetailActivity" />
+        <activity android:name=".activity.logistic.SettlementRelevanceListActivity" />
+        <activity android:name=".activity.logistic.SettlementDetailActivity" />
+        <activity android:name=".activity.logistic.SettleOrderListActivity" />
+        <activity android:name=".activity.logistic.SettlementListActivity" />
+        <activity android:name=".activity.staff.StaffHomeActivity" />
+        <activity android:name=".activity.seller.DeliveryNoInfoActivity" />
+        <activity android:name=".activity.ShopHomesActivity" />
+        <activity android:name=".activity.OrderActivityNew" />
+        <activity android:name=".activity.ConfirmOrderActivity" />
+        <activity android:name=".activity.ApplyRefuseActivity" />
+        <activity android:name=".activity.logistic.ShowBankDetailActivity" />
+        <activity android:name=".activity.seller.ReceivedOrderActivity" />
+        <activity android:name=".activity.seller.FinishOrderActivity" />
+        <activity android:name=".activity.ProtocolActivity" />
+        <activity android:name=".activity.BuyerInfoActivity" />
+        <!-- <activity android:name=".activity.UpdateBuyerActivity" /> -->
+        <activity android:name=".activity.seller.Setup1CompanyActivity" />
+        <activity android:name=".activity.seller.Setup1CompanyPersonalActivity" />
+        <activity android:name=".activity.seller.Setup2CompanyActivity" />
+        <activity android:name=".activity.seller.Setup3CompanyActivity" />
+        <activity android:name=".activity.seller.Setup4CompanyActivity" />
+        <activity android:name=".activity.seller.SelectSellerTypeActivity" />
+        <activity android:name=".activity.seller.SelectCitiesDialogActivity" />
+        <activity android:name=".activity.CommonEditActivity" />
+        <activity android:name=".activity.seller.SellerShopActivity" />
+        <activity android:name=".activity.CommonItemActivity" />
+        <activity android:name=".activity.seller.SellerCompanyEditActivity" />
+        <activity android:name=".activity.seller.SellerSettleEditActivity" />
+        <activity android:name=".activity.seller.SellerPersonalEditActivity" />
+        <activity android:name=".activity.logistic.SettingActivity" />
+        <activity android:name=".activity.logistic.ZhangHaoSettingActivity" />
+        <activity android:name=".activity.logistic.ModificationPasswordActivity" />
+        <activity android:name=".activity.logistic.LanguageSettingActivity" />
+        <activity android:name=".activity.logistic.LogisticsCompanyMessageActivity" />
+        <activity android:name=".activity.logistic.CompanyMessageActivity" />
+        <activity android:name=".activity.logistic.ContactsMessageActivity" />
+        <activity android:name=".activity.logistic.FreightTemplateListActivity" />
+        <activity android:name=".activity.logistic.FreightTemplateDetailsActivity" />
+        <activity android:name=".activity.logistic.SettleAccountsCenterActivity" />
+        <activity android:name=".activity.seller.SellerCompanyOverviewActivity" />
+        <activity android:name=".activity.seller.SellerPersonalOverviewActivity" />
+        <activity android:name=".activity.seller.SellerSettleOverviewActivity" />
+        <activity android:name=".activity.seller.SellerNewShopActivity" />
+        <activity android:name=".activity.seller.CourierContactInfoActivity" />
+        <activity android:name=".activity.seller.CourierTempletListActivity" />
+        <activity android:name=".activity.logistic.SettlementAccountNumberActivity" />
+        <activity android:name=".activity.seller.DepotListActivity" />
+        <activity android:name=".activity.seller.EditDepotActivity" />
+        <activity android:name=".activity.seller.SettlesActivity" />
+        <activity android:name=".activity.seller.SettleDetailActivity" />
+        <activity android:name=".activity.seller.ReleaseProductActivity" />
+        <activity android:name=".activity.seller.ChooseImageActivity" />
+        <activity android:name=".activity.seller.SampleSDActivity" />
+        <activity
+            android:name=".activity.SampleDetailPopActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity android:name=".activity.common.UpdateImageActivity" />
+        <activity android:name=".activity.common.ImageBucketChooseActivity" />
+        <activity android:name=".activity.common.ClassifyActivity" />
+        <activity android:name=".activity.seller.DescriptionActivity" />
+        <activity android:name=".activity.seller.DescriptionActivityNew" />
+        <activity android:name=".activity.SelectAddressActivity" />
+        <activity android:name=".activity.logistic.PropertyDetailActivity" />
+        <activity android:name=".activity.logistic.MoneyVariationActivity" />
+        <activity android:name=".activity.logistic.FreezeCashDepositActivity" />
+        <activity android:name=".activity.logistic.NoSttleAccountsActivity" />
+        <activity android:name=".activity.ReturnGoodActivity" />
+        <activity android:name=".activity.OrderLogisticActivity" />
+        <activity android:name=".activity.common.CommonChangeItemActivity" />
+        <activity android:name=".activity.AddrSelectActivity" />
+        <activity android:name=".activity.seller.CategoryActivity" />
+        <activity android:name=".activity.seller.GoodsSpecificationActivity" />
+        <activity android:name=".activity.RejectGoodActivity" />
+        <activity android:name=".activity.BuyerSetActivity" />
+        <activity android:name=".activity.seller.ReturnGoodsActivity" />
+        <activity android:name=".activity.seller.HandleReturnActivity" />
+        <activity android:name=".activity.CommonItemOneActivity" />
+        <activity android:name=".activity.staff.StaffSettingActivity" />
+        <activity android:name=".activity.logistic.GuanLianOrderActivity" />
+        <activity android:name=".fragment.staff.StaffInfoActivity" />
+        <activity android:name=".activity.seller.GoodsSpecificationActivityNew" />
+        <activity android:name=".activity.seller.CancelListActivity" />
+        <activity android:name=".activity.MyCouponsActivity" />
+        <activity android:name=".activity.GetEmaliNumber" />
+        <activity android:name=".activity.seller.MyDdepotListActivity" />
+        <activity android:name=".helper.PicturePreviewActivity" />
+        <activity android:name=".activity.ShopsListActivity" />
+        <activity android:name=".activity.OrderEvaluateNewActivity" />
+        <activity android:name=".activity.logistic.LogisticForgetPasswordActivity" />
+        <activity android:name=".zxing.MipcaActivityCapture" />
+        <activity android:name=".activity.LivesCommunity.FaBuMessageActivity" />
+        <activity android:name=".activity.LivesCommunity.LivesCommuntiyHomeActivty" />
+        <activity android:name=".helper.ShowNativeImageActivity" />
+        <activity android:name=".activity.LivesCommunity.MessageDetailsActivity" />
+        <activity android:name=".activity.LivesCommunity.LivesCommunityLoginActivity" />
+        <activity android:name=".activity.LivesCommunity.LeiMuListActivity" />
+        <activity android:name=".activity.LivesCommunity.LeiMuMessageListActivity" />
+        <activity android:name=".activity.LivesCommunity.JuBaoActivity" />
+        <activity android:name=".activity.LivesCommunity.MyFaBuMessageActivity"></activity>
+        <activity android:name="me.iwf.photopicker.PhotoPickerActivity"></activity>
+        <activity android:name="me.iwf.photopicker.PhotoPagerActivity"></activity>
+    </application>
+
+</manifest>

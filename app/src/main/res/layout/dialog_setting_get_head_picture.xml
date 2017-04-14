@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        android:id="@+id/flt_amble_upload"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="1px"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_saoma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="13dp"
+            android:gravity="center"
+            android:textColor="#6a6a6a"
+            android:textSize="15sp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flt_take_photo_upload"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="2px"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_shuru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="13dp"
+            android:gravity="center"
+            android:textColor="#6a6a6a"
+            android:textSize="15sp"/>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="2px"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:textColor="#6a6a6a"
+        android:textSize="15sp"/>
+</LinearLayout>

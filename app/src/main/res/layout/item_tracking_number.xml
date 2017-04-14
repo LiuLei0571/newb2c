@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+<TextView
+    android:id="@+id/tv_traching_type"
+   style="@style/w_h_20dp"
+    android:textColor="@color/index_head_bg"
+    android:visibility="gone"/>
+    <TextView
+        android:id="@+id/tv_traching_order_number"
+        style="@style/w_h_20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"/>
+    <TextView
+        android:id="@+id/tv_traching_express_number"
+        style="@style/w_h_20dp"
+       />
+    <TextView
+        android:id="@+id/tv_traching_zong_money"
+        style="@style/w_h_20dp"
+
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"/>
+    <TextView
+        android:id="@+id/tv_traching_yi_money"
+        style="@style/w_h_20dp"
+
+        android:textColor="@color/index_head_bg"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/tv_traching_wei_money"
+        style="@style/w_h_20dp"
+
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:textColor="@color/index_head_bg"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/tv_traching_time"
+        style="@style/w_h_20dp"
+       />
+</LinearLayout>

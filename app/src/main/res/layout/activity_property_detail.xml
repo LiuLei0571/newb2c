@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/toolbar"></include>
+    <LinearLayout
+        android:id="@+id/ll_biandongjiju"
+        style="@style/mine_tiaomu"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_biandongjilku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <ImageView
+            style="@style/right_jiantou" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_dongjiejilu"
+        style="@style/mine_tiaomu"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_dongjiejili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <ImageView
+            style="@style/right_jiantou" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_jiesuanjilu"
+        style="@style/mine_tiaomu"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_jiesuanjilu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            style="@style/right_jiantou" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:id="@+id/view3"></View>
+</LinearLayout>

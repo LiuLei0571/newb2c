@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/toolbar"></include>
+<LinearLayout
+    style="@style/mine_tiaomu"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_kaudi_name_q"
+        style="@style/w_h_20dp"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:id="@+id/tv_kaudi_name"
+        style="@style/w_h_20dp"
+        android:textColor="@color/gray"
+        />
+</LinearLayout>
+    <LinearLayout
+        style="@style/mine_tiaomu">
+        <TextView
+            android:id="@+id/tv_gongsi_name_q"
+            style="@style/w_h_20dp"
+            android:layout_weight="1"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_gongsi_name"
+            style="@style/w_h_20dp"
+            android:textColor="@color/gray"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/mine_tiaomu">
+        <TextView
+            android:id="@+id/tv_zhuce_dizhi_q"
+            style="@style/w_h_20dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/tv_zhuce_dizhi"
+            style="@style/w_h_20dp"
+            android:textColor="@color/gray"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/mine_tiaomu">
+        <TextView
+            android:id="@+id/tv_zhuce_time_q"
+            style="@style/w_h_20dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/tv_zhuce_time"
+            style="@style/w_h_20dp"
+            android:textColor="@color/gray"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/mine_tiaomu">
+        <TextView
+            android:id="@+id/tv_renshu_q"
+            style="@style/w_h_20dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/tv_renshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/mine_tiaomu">
+        <TextView
+            style="@style/w_h_20dp"
+            android:id="@+id/tv_jianjie_q"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/tv_jianjie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_yingyezhizhao"
+        style="@style/mine_tiaomu">
+
+        <TextView
+            style="@style/w_h_20dp"
+            android:layout_weight="1"
+            android:id="@+id/ll_yingyezhizhao_q" />
+
+        <ImageView
+           style="@style/right_jiantou" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"></View>
+</LinearLayout>

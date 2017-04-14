@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_shop_name_status"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/order_item_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="shop_name"
+            android:textColor="#5d5d5d"
+            android:textSize="@dimen/classify_text_size"/>
+
+        <TextView
+            android:id="@+id/order_item_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="status"
+            android:textColor="#f23030"
+            android:textSize="@dimen/classify_text_size"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"/>
+
+    <com.example.b2c.widget.MyListView
+        android:id="@+id/lv_order_list_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#cccccc"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp">
+
+        <TextView
+            android:id="@+id/order_item_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="共0件商品  运费：¥0.00 实付：¥0.00"
+            android:textColor="#f23030"
+            android:textSize="@dimen/classify_text_size"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#cccccc"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <Button
+            android:id="@+id/btn_action"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/button_shape"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_12sp"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/btn_action"
+            android:background="@drawable/login_layout_shape"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_12sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#cccccc"/>
+
+</LinearLayout>

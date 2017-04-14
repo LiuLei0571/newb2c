@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/toolbar"/>
+
+    <com.example.b2c.widget.RefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="-3dp">
+
+        <ListView
+            android:id="@+id/courier_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:dividerHeight="0.5dp"
+            android:divider="@color/divider_light"
+            android:paddingTop="@dimen/marring_normal"/>
+    </com.example.b2c.widget.RefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_goodslist_radio"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rg_sort"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_by_sold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:textColor="@drawable/order_textcolor"
+                android:textSize="@dimen/classify_text_size" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="#cccccc" />
+
+            <RadioButton
+                android:id="@+id/rb_by_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:textColor="@drawable/order_textcolor"
+                android:textSize="@dimen/classify_text_size" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="#cccccc" />
+
+            <RadioButton
+                android:id="@+id/rb_by_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:textColor="@drawable/order_textcolor"
+                android:textSize="@dimen/classify_text_size" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <include layout="@layout/empty"/>
+
+</LinearLayout>

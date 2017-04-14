@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:textColor="#d1d1d1"
+        />
+
+    <Button
+        android:id="@+id/btn_role_personal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_btn_bg_ringtofull"
+        android:textColor="@drawable/selector_text_redtowhite"/>
+
+    <Button
+        android:id="@+id/btn_role_company"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_btn_bg_ringtofull"
+        android:textColor="@drawable/selector_text_redtowhite"/>
+
+</LinearLayout>

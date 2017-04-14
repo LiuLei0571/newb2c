@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+    <LinearLayout
+        style="@style/mine_tiaomu">
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray"
+            android:layout_weight="1"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/et_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/mine_tiaomu">
+
+        <TextView
+            android:id="@+id/tv_family"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_family"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/mine_tiaomu">
+
+        <TextView
+            android:id="@+id/tv_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_last"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/mine_tiaomu">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/mine_tiaomu"
+        >
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray"
+            android:layout_weight="1"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/et_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"></View>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/btn_xinzeng"
+            android:layout_width="@dimen/x210"
+            android:layout_height="@dimen/x70"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_child_account"
+            android:textSize="@dimen/font_18sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_xinzeng"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            />
+        <ImageView
+            android:layout_width="@dimen/x210"
+            android:layout_height="@dimen/x210"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/tv_add"
+            android:src="@drawable/ic_launcher"
+            />
+    </RelativeLayout>
+</LinearLayout>

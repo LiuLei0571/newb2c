@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_seller"/>
+    <com.example.b2c.widget.SettingItemView2
+        android:id="@+id/siv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+    <com.example.b2c.widget.SettingItemView2
+        android:id="@+id/siv_firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.example.b2c.widget.SettingItemView2
+        android:id="@+id/siv_lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.example.b2c.widget.SettingItemView2
+        android:id="@+id/siv_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cb_isDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:background="@drawable/selector_cb_background"
+            android:button="@null"
+            />
+        <TextView
+            android:id="@+id/tv_cb_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:text="设为默认仓库"
+            android:textColor="@color/text_normal"
+            />
+    </LinearLayout>
+
+</LinearLayout>

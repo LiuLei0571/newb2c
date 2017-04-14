@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/tv_classify_child"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/list_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/classify_text_size" />
+
+</RelativeLayout>

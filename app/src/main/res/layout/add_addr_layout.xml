@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.example.b2c.widget.EditTextWithDelete
+                android:id="@+id/et_firstName"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@null"
+                android:hint="firstName"
+                android:drawableRight="@drawable/ic_delete"
+                android:padding="10dp"/>
+
+            <include
+                layout="@layout/item_line"/>
+
+            <com.example.b2c.widget.EditTextWithDelete
+                android:id="@+id/et_lastName"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@null"
+                android:hint="lastName"
+                android:drawableRight="@drawable/ic_delete"
+                android:padding="10dp"/>
+
+            <include
+                layout="@layout/item_line"/>
+
+            <com.example.b2c.widget.EditTextWithDelete
+                android:id="@+id/et_tel"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:hint="电话（非必填）"
+                android:background="@null"
+                android:inputType="number"
+                android:drawableRight="@drawable/ic_delete"
+                android:padding="10dp"/>
+            <include
+                layout="@layout/item_line"/>
+
+            <com.example.b2c.widget.EditTextWithDelete
+                android:id="@+id/et_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:hint="手机号"
+                android:background="@null"
+                android:inputType="number"
+                android:drawableRight="@drawable/ic_delete"
+                android:padding="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.example.b2c.widget.SettingItemView2
+        android:id="@+id/siv_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cb_isDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:background="@drawable/selector_cb_background"
+            android:button="@null"
+            />
+        <TextView
+            android:id="@+id/tv_cb_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:text="设为默认地址"
+            android:textColor="@color/text_normal"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/button_shape"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

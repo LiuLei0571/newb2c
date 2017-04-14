@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <corners
+        android:radius="25dp"
+        android:topLeftRadius="25dp"
+        android:topRightRadius="25dp"
+        android:bottomLeftRadius="25dp"
+        android:bottomRightRadius="25dp"/><!-- 设置圆角半径 -->
+    <!-- 间隔 -->
+    <padding
+        android:left="2dp"
+        android:top="2dp"
+        android:right="2dp"
+        android:bottom="2dp"/><!-- 各方向的间隔 -->
+
+    <!-- 大小 -->
+    <size
+        android:width="50dp"
+        android:height="50dp"/><!-- 宽度和高度 -->
+
+    <!-- 填充 -->
+    <solid
+    android:color="@color/seller_bar"/>
+
+    <!-- 描边 &ndash;&gt;-->
+    <stroke
+        android:width="2dp"
+        android:color="@color/seller_bar_slow"
+        android:dashGap="1dp"/>
+
+</shape>

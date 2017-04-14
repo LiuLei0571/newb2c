@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_bind_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:text="绑定手机号"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_my_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/mine_arrow_right"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_small"/>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_logistics_security"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:text="安全中心"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/mine_arrow_right"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_small"/>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_line"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="@dimen/dimen_border_size_xlarge"
+        android:layout_marginRight="@dimen/dimen_border_size_xlarge"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_shape"
+        android:padding="10dp"
+        android:text="退出"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_large"/>
+</LinearLayout>

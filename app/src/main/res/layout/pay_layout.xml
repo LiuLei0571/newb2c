@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_top"
+        android:background="#f23030">
+
+        <ImageView
+            android:id="@+id/iv_pay_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arrow_left"/>
+
+        <TextView
+            android:id="@+id/tv_pay_makesureorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/check_order"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_large"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv_pay_choosepaytype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/choose_paytype"
+        android:textColor="#5d5d5d"
+        android:textSize="@dimen/font_15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rg_pay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_pay_predeposit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/pay_predeposit"
+                android:textColor="#5d5d5d"
+                android:textSize="@dimen/font_13sp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/btn_pay_order"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_border_size_xlarge"
+        android:layout_marginRight="@dimen/dimen_border_size_xlarge"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_shape"
+        android:text="@string/check"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_large"/>
+
+</LinearLayout>

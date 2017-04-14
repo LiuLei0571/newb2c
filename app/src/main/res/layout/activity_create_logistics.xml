@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/tv_title_message"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title_account"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_15sp"/>
+
+            <include
+                layout="@layout/item_line"/>
+
+            <TextView
+                android:id="@+id/tv_title_password"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_15sp"/>
+
+            <include
+                layout="@layout/item_line"/>
+
+            <TextView
+                android:id="@+id/tv_title_name"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_15sp"/>
+
+            <include
+                layout="@layout/item_line"/>
+
+            <TextView
+                android:id="@+id/tv_title_phone"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_15sp"/>
+
+            <include
+                layout="@layout/item_line"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_15sp"
+                android:id="@+id/tv_title_email" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <com.example.b2c.widget.EditTextWithDelete
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="8dp"
+                android:background="@null"
+                android:singleLine="true"
+                android:drawableRight="@drawable/ic_delete"
+                android:padding="10dp"
+                android:textSize="@dimen/font_15sp"/>
+
+            <include
+                layout="@layout/item_line"/>
+
+            <com.example.b2c.widget.EditTextWithDelete
+                android:id="@+id/et_passwrod"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:singleLine="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="8dp"
+                android:inputType="textPassword"
+                android:background="@null"
+                android:drawableRight="@drawable/ic_delete"
+                android:padding="10dp"
+                android:textSize="@dimen/font_15sp"/>
+
+            <include
+                layout="@layout/item_line"/>
+
+            <com.example.b2c.widget.EditTextWithDelete
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:singleLine="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="8dp"
+                android:background="@null"
+                android:drawableRight="@drawable/ic_delete"
+                android:padding="10dp"
+                android:textSize="@dimen/font_15sp"/>
+
+            <include
+                layout="@layout/item_line"/>
+
+            <com.example.b2c.widget.EditTextWithDelete
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="8dp"
+                android:background="@null"
+                android:singleLine="true"
+                android:inputType="number"
+                android:drawableRight="@drawable/ic_delete"
+                android:padding="10dp"
+                android:textSize="@dimen/font_15sp"/>
+
+            <include
+                layout="@layout/item_line"/>
+
+            <com.example.b2c.widget.EditTextWithDelete
+                android:id="@+id/et_mail"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="8dp"
+                android:singleLine="true"
+                android:background="@null"
+                android:drawableRight="@drawable/ic_delete"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+
+        android:layout_marginLeft="@dimen/dimen_border_size_xlarge"
+        android:layout_marginRight="@dimen/dimen_border_size_xlarge"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_shape"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_large"/>
+
+</LinearLayout>

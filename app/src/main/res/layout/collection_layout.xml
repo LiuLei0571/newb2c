@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lyt_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/collection_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_top"
+            android:background="@color/hand">
+
+            <TextView
+                android:id="@+id/tv_collection_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_large" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rg_collection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_collcetion_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@drawable/order_textcolor" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#cccccc" />
+
+                <RadioButton
+                    android:id="@+id/rb_collcetion_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textColor="@drawable/order_textcolor" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_collection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include layout="@layout/empty" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt_un_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_to_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_normal"
+            android:layout_marginRight="@dimen/padding_normal"
+            android:background="@drawable/button_shape"
+            android:padding="@dimen/padding_normal"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_large" />
+
+        <Button
+            android:id="@+id/btn_login_seller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_normal"
+            android:layout_marginRight="@dimen/padding_normal"
+            android:layout_marginTop="@dimen/marring_mlarge"
+            android:background="@drawable/button_shape"
+            android:padding="@dimen/padding_normal"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_large"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_login_logistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_normal"
+            android:layout_marginRight="@dimen/padding_normal"
+            android:layout_marginTop="@dimen/marring_mlarge"
+            android:background="@drawable/button_shape"
+            android:padding="@dimen/padding_normal"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_large"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_login_courier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_normal"
+            android:layout_marginRight="@dimen/padding_normal"
+            android:layout_marginTop="@dimen/marring_mlarge"
+            android:background="@drawable/button_shape"
+            android:padding="@dimen/padding_normal"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_large"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

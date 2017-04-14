@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+   >
+    <include layout="@layout/toolbar"></include>
+<LinearLayout
+    android:id="@+id/ll_gongsi"
+   style="@style/mine_tiaomu"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/gongsixinxi"
+        style="@style/w_h_20dp"
+        android:layout_weight="1"
+        />
+    <ImageView
+        style="@style/right_jiantou"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_lianxiren"
+        style="@style/mine_tiaomu"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/lianxirenxinxi"
+            style="@style/w_h_20dp"
+            android:layout_weight="1"
+            />
+        <ImageView
+            style="@style/right_jiantou"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/jiesuan"
+        style="@style/mine_tiaomu"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/jiesuanzhanghao"
+            style="@style/w_h_20dp"
+            android:layout_weight="1"
+            />
+        <ImageView
+            style="@style/right_jiantou"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        />
+</LinearLayout>

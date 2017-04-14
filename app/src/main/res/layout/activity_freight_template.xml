@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/freight_template_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        ></com.jcodecraeer.xrecyclerview.XRecyclerView>
+    <include layout="@layout/util_no_shuju"
+        android:id="@+id/freight_template_noshuju"
+        ></include>
+
+</RelativeLayout>

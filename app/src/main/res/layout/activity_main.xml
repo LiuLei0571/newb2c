@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RadioGroup
+        android:id="@+id/main_tab_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/BottomTabStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/home_selector"
+            android:textSize="@dimen/font_12sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_classify"
+            style="@style/BottomTabStyle"
+            android:checked="false"
+            android:drawableTop="@drawable/classify_selector"
+            android:textSize="@dimen/font_12sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_shopping_cart"
+            style="@style/BottomTabStyle"
+            android:checked="false"
+            android:drawableTop="@drawable/shopping_selector"
+            android:textSize="@dimen/font_12sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_collection"
+            style="@style/BottomTabStyle"
+            android:checked="false"
+            android:drawableTop="@drawable/collection_selector"
+            android:textSize="@dimen/font_12sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            style="@style/BottomTabStyle"
+            android:checked="false"
+            android:drawableTop="@drawable/mine_selector"
+            android:textSize="@dimen/font_12sp"
+            />
+    </RadioGroup>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/main_tab_group"
+        android:background="@color/divider_light" />
+
+    <com.example.b2c.widget.CustomViewPager
+        android:id="@+id/custom_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_tab_group" />
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+package com.example.b2c.net.response;
+
+import com.example.b2c.net.response.seller.BuyerInfos;
+import com.example.b2c.net.response.seller.SellerInfo;
+import com.google.gson.annotations.SerializedName;
+
+import java.util.List;
+import java.util.Map;
+
+public class StaffOrderList {
+
+   private int id;
+    private String orderCode;
+    private String deliveryNo;
+    private int orderStatus;
+    private int orderDetailCount;
+    private String samplePic;
+
+    public String getActualPayPrice() {
+        return actualPayPrice;
+    }
+
+    public void setActualPayPrice(String actualPayPrice) {
+        this.actualPayPrice = actualPayPrice;
+    }
+
+    private String actualPayPrice;
+   private List<SellerInfo >sellerInfo;
+
+    public List<BuyerInfo> getBuyerInfo() {
+        return buyerInfo;
+    }
+
+    public void setBuyerInfo(List<BuyerInfo> buyerInfo) {
+        this.buyerInfo = buyerInfo;
+    }
+
+    public List<SellerInfo> getSellerInfo() {
+        return sellerInfo;
+    }
+
+    public void setSellerInfo(List<SellerInfo> sellerInfo) {
+        this.sellerInfo = sellerInfo;
+    }
+
+    private List<BuyerInfo >buyerInfo;
+
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getOrderCode() {
+        return orderCode;
+    }
+
+    public void setOrderCode(String orderCode) {
+        this.orderCode = orderCode;
+    }
+
+    public String getDeliveryNo() {
+        return deliveryNo;
+    }
+
+    public void setDeliveryNo(String deliveryNo) {
+        this.deliveryNo = deliveryNo;
+    }
+
+    public int getOrderStatus() {
+        return orderStatus;
+    }
+
+    public void setOrderStatus(int orderStatus) {
+        this.orderStatus = orderStatus;
+    }
+
+    public int getOrderDetailCount() {
+        return orderDetailCount;
+    }
+
+    public void setOrderDetailCount(int orderDetailCount) {
+        this.orderDetailCount = orderDetailCount;
+    }
+
+    public String getSamplePic() {
+        return samplePic;
+    }
+
+    public void setSamplePic(String samplePic) {
+        this.samplePic = samplePic;
+    }
+
+
+
+    public class SellerInfo{
+        private String sellerName;
+        private String sellerMobile;
+
+        public String getSellerName() {
+            return sellerName;
+        }
+
+        public void setSellerName(String sellerName) {
+            this.sellerName = sellerName;
+        }
+
+        public String getSellerMobile() {
+            return sellerMobile;
+        }
+
+        public void setSellerMobile(String sellerMobile) {
+            this.sellerMobile = sellerMobile;
+        }
+
+        public String getShippingAddress() {
+            return shippingAddress;
+        }
+
+        public void setShippingAddress(String shippingAddress) {
+            this.shippingAddress = shippingAddress;
+        }
+
+        private String shippingAddress;
+    }
+    public class BuyerInfo{
+        private String buyerName;
+        private String buyerMobile;
+        private String receiveAddress;
+        private String payAddress;
+
+        public String getBuyerName() {
+            return buyerName;
+        }
+
+        public void setBuyerName(String buyerName) {
+            this.buyerName = buyerName;
+        }
+
+        public String getBuyerMobile() {
+            return buyerMobile;
+        }
+
+        public void setBuyerMobile(String buyerMobile) {
+            this.buyerMobile = buyerMobile;
+        }
+
+        public String getReceiveAddress() {
+            return receiveAddress;
+        }
+
+        public void setReceiveAddress(String receiveAddress) {
+            this.receiveAddress = receiveAddress;
+        }
+
+        public String getPayAddress() {
+            return payAddress;
+        }
+
+        public void setPayAddress(String payAddress) {
+            this.payAddress = payAddress;
+        }
+    }
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/title"
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/hand"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        >
+        <Button
+            android:id="@+id/btn_shenqing"
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/x60"
+            android:background="@drawable/bg_touming"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/tv_baozhengjin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:layout_below="@+id/jkl"
+            />
+        <TextView
+            android:id="@+id/jkl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16sp"
+            />
+        <TextView
+            android:id="@+id/tv_keyong_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16sp"
+            android:layout_below="@+id/tv_baozhengjin"
+            android:layout_marginBottom="7dp"
+            />
+        <TextView
+            android:id="@+id/tv_keyong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16sp"
+            android:layout_below="@+id/tv_baozhengjin"
+            android:layout_marginBottom="7dp"
+            android:layout_toRightOf="@+id/tv_keyong_title"
+            android:layout_marginLeft="5dp"
+
+            />
+        <TextView
+            android:id="@+id/tv_dongjie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16sp"
+            android:layout_below="@+id/tv_keyong"
+            />
+        <TextView
+            android:id="@+id/tv_dongjie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16sp"
+            android:layout_below="@+id/tv_keyong"
+            android:layout_toRightOf="@+id/tv_dongjie_title"
+            android:layout_marginLeft="5dp"
+
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tv_daijiesuan"
+        style="@style/mine_tiaomu"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_title_daijiesuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            />
+        <ImageView
+            style="@style/right_jiantou" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tv_yuqijiesuan"
+        style="@style/mine_tiaomu"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_title_yuqijiesuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            />
+        <ImageView
+            style="@style/right_jiantou" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tv_yijiesuan"
+        style="@style/mine_tiaomu"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_title_yijiesuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            />
+        <ImageView
+            style="@style/right_jiantou" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/view3"></View>
+</LinearLayout>

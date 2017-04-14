@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setup1_company"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.example.b2c.activity.seller.Setup2CompanyActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_border_size_xlarge"
+            android:layout_marginRight="@dimen/dimen_border_size_xlarge"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:scaleType="center"
+                android:src="@drawable/company_set_two"/>
+
+            <TextView
+                android:id="@+id/tv_small_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="联系人信息"
+                android:textColorHint="#d1d1d1d1"
+                android:textSize="@dimen/text_large"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/shape_edit_gray"
+                android:padding="5dp">
+
+                <com.example.b2c.widget.EditTextWithDelete
+                    android:id="@+id/et_lastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:background="@null"
+                    android:drawableRight="@drawable/ic_delete"
+                    android:hint="公司名"
+                    android:singleLine="true"
+                    android:textColorHint="#d1d1d1d1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_edit_gray"
+                android:padding="5dp">
+
+                <com.example.b2c.widget.EditTextWithDelete
+                    android:id="@+id/et_firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_username"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/ic_delete"
+                    android:hint="注册地址"
+                    android:singleLine="true"
+                    android:textColorHint="#d1d1d1d1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_edit_gray"
+                android:padding="5dp">
+
+                <com.example.b2c.widget.EditTextWithDelete
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_username"
+                    android:background="@null"
+                    android:drawableRight="@drawable/ic_delete"
+                    android:hint="注册时间"
+                    android:singleLine="true"
+                    android:textColorHint="#d1d1d1d1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_edit_gray"
+                android:padding="5dp">
+
+                <com.example.b2c.widget.EditTextWithDelete
+                    android:id="@+id/et_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_toRightOf="@+id/iv_username"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/ic_delete"
+                    android:hint="公司人数(人)"
+                    android:singleLine="true"
+                    android:textColorHint="#d1d1d1d1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_edit_gray"
+                android:padding="5dp">
+
+                <com.example.b2c.widget.EditTextWithDelete
+                    android:id="@+id/et_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_toRightOf="@+id/iv_username"
+                    android:background="@null"
+                    android:drawableRight="@drawable/ic_delete"
+                    android:hint="经营范围"
+                    android:singleLine="true"
+                    android:textColorHint="#d1d1d1d1"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_shape"
+                android:padding="10dp"
+                android:text="下一步"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_large"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

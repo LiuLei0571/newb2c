@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_show_native_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    >
+    <ImageView
+        android:id="@+id/native_delete"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/delete"
+        android:visibility="gone"
+        />
+    <com.example.b2c.helper.ZoomImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/native_zoom"
+        android:scaleType="matrix"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/native_delete"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp">
+    </com.example.b2c.helper.ZoomImageView>
+</RelativeLayout>

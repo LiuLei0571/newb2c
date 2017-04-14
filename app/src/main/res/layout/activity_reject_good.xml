@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+    <com.example.b2c.widget.EditTextWithDelete
+        android:id="@+id/et_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:hint="请输入拒收理由"
+        android:drawableRight="@drawable/ic_delete"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawablePadding="10dp"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交申请"
+            android:textSize="18sp"
+            android:padding="6dp"
+            android:background="@color/seller_bar"/>
+    </LinearLayout>
+</LinearLayout>
+
+

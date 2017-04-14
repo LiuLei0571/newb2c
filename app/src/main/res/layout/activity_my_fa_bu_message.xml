@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<include layout="@layout/toolbar"
+    android:id="@+id/pp"></include>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recycleView_my_fabu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pp"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+    <include layout="@layout/empty"></include>
+</RelativeLayout>

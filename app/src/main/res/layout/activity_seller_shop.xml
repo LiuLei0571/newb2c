@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_seller_shop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_seller" />
+
+    <RelativeLayout
+        android:id="@+id/rl_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.example.b2c.widget.CircleImg
+            android:id="@+id/ci_logo"
+            android:layout_width="@dimen/mine_head_height"
+            android:layout_height="@dimen/mine_head_height"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/shop_no_logo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <com.example.b2c.widget.SettingItemView2
+        android:id="@+id/siv_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <com.example.b2c.widget.SettingItemView2
+        android:id="@+id/siv_goods_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <com.example.b2c.widget.SettingItemView2
+        android:id="@+id/siv_shop_introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <com.example.b2c.widget.SettingItemView2
+        android:id="@+id/siv_main_catogery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible" />
+</LinearLayout>

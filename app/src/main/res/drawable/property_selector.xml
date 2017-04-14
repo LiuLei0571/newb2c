@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/property_unchecked" android:state_checked="false" android:textColor="#5d5d5d"></item>
+    <item android:drawable="@drawable/property_checked" android:state_checked="true" android:textColor="#ffffff"></item>
+
+</selector>

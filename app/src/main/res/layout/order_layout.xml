@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_top"
+        android:background="#f23030">
+
+        <ImageView
+            android:id="@+id/iv_order_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arrow_left"/>
+
+        <TextView
+            android:id="@+id/tv_my_order_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_large"/>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_order_select_type"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_border_size_llarge"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_all"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@drawable/order_textcolor"
+            android:textSize="@dimen/classify_text_size"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/padding_xlarge"
+            android:background="#cccccc"/>
+
+        <RadioButton
+            android:id="@+id/rb_wait_pay"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="代付款"
+            android:textColor="@drawable/order_textcolor"
+            android:textSize="@dimen/classify_text_size"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/dimen_border_size_xlarge"
+            android:background="#cccccc"/>
+
+        <RadioButton
+            android:id="@+id/rb_wait_send"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="代发货"
+            android:textColor="@drawable/order_textcolor"
+            android:textSize="@dimen/classify_text_size"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/dimen_border_size_xlarge"
+            android:background="#cccccc"/>
+
+        <RadioButton
+            android:id="@+id/rb_wait_recv"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="代收货"
+            android:textColor="@drawable/order_textcolor"
+            android:textSize="@dimen/classify_text_size"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/dimen_border_size_xlarge"
+            android:background="#cccccc"/>
+
+        <RadioButton
+            android:id="@+id/rb_done"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已完成"
+            android:textColor="@drawable/order_textcolor"
+            android:textSize="@dimen/classify_text_size"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/dimen_border_size_xlarge"
+            android:background="#cccccc"/>
+
+        <RadioButton
+            android:id="@+id/rb_return"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="退货/退款"
+            android:textColor="@drawable/order_textcolor"
+            android:textSize="@dimen/classify_text_size"/>
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/lv_order_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
+        android:dividerHeight="8dp">
+    </ListView>
+
+</LinearLayout>

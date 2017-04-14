@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/padding_lnormal"
+    android:paddingRight="@dimen/padding_lnormal"
+    android:id="@+id/ll_genbu"
+    android:layout_marginBottom="1dp"
+    >
+    <TextView
+        android:id="@+id/tv_depot_names"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="**省**市**地址仓库"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#6a6a6a"
+        android:textSize="18sp"/>
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:background="@color/white"-->
+        <!--android:drawablePadding="10dp"-->
+        <!--android:drawableRight="@drawable/mine_arrow_right"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:textColor="@color/text_gray"-->
+        <!--android:textSize="@dimen/text_small"/>-->
+    <CheckBox
+        android:id="@+id/cb_cangku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:checked="false"
+        android:button="@drawable/check_box"
+        android:layout_margin="5dp"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        />
+</LinearLayout>

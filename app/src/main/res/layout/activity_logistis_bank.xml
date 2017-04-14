@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_bankcard_detail"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_show_bank"
+            android:layout_marginTop="50dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_bankcard_detail"
+
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title_message"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_bank_card"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_bank_account"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</LinearLayout>

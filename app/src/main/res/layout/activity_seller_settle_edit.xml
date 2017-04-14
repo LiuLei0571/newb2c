@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_seller_settle_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_seller"/>
+    <com.example.b2c.widget.SettingItemView2
+        android:id="@+id/siv_bankName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <com.example.b2c.widget.SettingItemView2
+        android:id="@+id/siv_bankBranchName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <com.example.b2c.widget.SettingItemView2
+        android:id="@+id/siv_bankAccountName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <com.example.b2c.widget.SettingItemView2
+        android:id="@+id/siv_bankAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+

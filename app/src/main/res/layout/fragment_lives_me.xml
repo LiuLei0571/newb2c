@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/hand">
+
+        <com.example.b2c.widget.RoundImageView
+            android:id="@+id/lives_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/kuaidi"
+            />
+
+        <TextView
+            android:id="@+id/tv_lives_me_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lives_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_live_fabu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/margin_normal">
+
+        <ImageView
+            android:id="@+id/iv_mineone4"
+            android:layout_width="@dimen/padding_xlarge"
+            android:layout_height="@dimen/padding_xlarge"
+            android:layout_centerVertical="true"
+            android:src="@drawable/order_two" />
+
+        <TextView
+            android:id="@+id/tv_my_fabu"
+            style="@style/w_h_20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_mineone4" />
+
+        <ImageView
+            android:layout_width="@dimen/padding_xlarge"
+            android:layout_height="@dimen/padding_xlarge"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+</LinearLayout>

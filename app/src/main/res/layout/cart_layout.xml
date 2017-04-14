@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_top"
+        android:background="@color/hand">
+
+        <TextView
+            android:id="@+id/tv_shopping_cart_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_large" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_cart_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_border_size_lllarge"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <CheckBox
+            android:id="@+id/cb_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_cb_background"
+            android:button="@null"
+            android:layout_marginLeft="@dimen/padding_lsmall"/>
+
+        <TextView
+            android:id="@+id/tv_selet_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/cb_select_all"
+            android:layout_marginLeft="3dp"
+            android:text="全选"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/cart_goods_text_size" />
+
+        <TextView
+            android:id="@+id/tv_cart_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_normal"
+            android:layout_toRightOf="@id/tv_selet_all"
+            android:text="@string/delete"
+            android:textColor="@color/red"
+            android:textSize="@dimen/mine_info_text_size_normal" />
+
+        <Button
+            android:id="@+id/btn_settlement"
+            android:layout_width="63dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="@dimen/padding_normal"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mine_info_text_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_lnormal"
+            android:layout_toLeftOf="@id/btn_settlement"
+            android:text="¥0.0"
+            android:textColor="@color/general_red"
+            android:textSize="@dimen/text_large" />
+
+        <LinearLayout
+            android:id="@+id/ll_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/padding_normal"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/tv_cost"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_shopping_cart_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/tv_shopping_cart_uninclude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_xsmall"
+                android:textSize="@dimen/dimen_font_size_xxsmall" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_shop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_cart_bottom"
+        android:layout_below="@id/top_layout"
+        android:dividerHeight="5dp"></ListView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/lv_shop"
+        android:background="@color/divider_light" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider_light" />
+
+</RelativeLayout>

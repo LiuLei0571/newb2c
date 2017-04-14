@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        layout ="@layout/toolbar_seller"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_weight="1">
+        <com.example.b2c.widget.SettingItemView2
+            android:id="@+id/siv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <com.example.b2c.widget.SettingItemView2
+            android:id="@+id/siv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            />
+        <com.example.b2c.widget.SettingItemView2
+            android:id="@+id/siv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            />
+        <com.example.b2c.widget.SettingItemView2
+            android:id="@+id/siv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            />
+        <com.example.b2c.widget.SettingItemView2
+            android:id="@+id/siv_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center"
+                android:text="退出登出"
+                android:textSize="@dimen/font_18sp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_login_shape"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

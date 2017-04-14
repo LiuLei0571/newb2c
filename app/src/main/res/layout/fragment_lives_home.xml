@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/xrecycle_lives_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+    <TextView
+        android:id="@+id/tv_fankui"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/yellow_yuan"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="反馈"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        />
+
+</RelativeLayout>
